@@ -1371,7 +1371,7 @@ function updateMoney() {
 
 		$("#moneybarrow" + i).show();
 		document.getElementById("p" + i + "moneybar").style.border = "2px solid " + p_i.color;
-		document.getElementById("p" + i + "money").innerHTML = p_i.money;
+		document.getElementById("p" + i + "money").innerHTML = currencySymbol() + p_i.money;
 		document.getElementById("p" + i + "moneyname").innerHTML = p_i.name;
 	}
 	// show("moneybarrow9"); // Don't remove this line or make the first for-loop stop when i <= 8, because this affects how the table is displayed.
